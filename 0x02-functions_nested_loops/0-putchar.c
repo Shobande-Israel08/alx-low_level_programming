@@ -4,7 +4,6 @@
 	 * is written by israel
 	 * Return: 0
 	 */
-
 	int main(void)
 	{
 	_putchar('_');
