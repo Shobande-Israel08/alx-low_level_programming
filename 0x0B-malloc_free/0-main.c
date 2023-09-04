@@ -1,3 +1,7 @@
+#include "main.h"
+#include <stdio.h>
+#include <stdlib.h>
+
 /**
  * simple_print_buffer - prints buffer in hexa
  * @buffer: the address of memory to print
@@ -27,7 +31,7 @@ void simple_print_buffer(char *buffer, unsigned int size)
 }
 
 /**
- * main - check the code for ALX School students.
+ * main - check the code for Holberton School students.
  *
  * Return: Always 0.
  */
@@ -43,5 +47,5 @@ int main(void)
     }
     simple_print_buffer(buffer, 98);
     free(buffer);
-    return (0);
+	return (0);
 }
