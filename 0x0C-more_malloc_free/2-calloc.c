@@ -20,3 +20,30 @@ char *_memset(char *s, char b, unsigned int n)
 
 	return (s);
 }
+
+/**
+ * _calloc - allocates memory for an array, using malloc.
+ * @nmemb: the number of memory blocks to be created.
+ * @size: the size of each block.
+ *
+ * Return: void pointer
+ */
+void *_calloc(unsigned int nmemb, unsigned int size)
+{
+	void *memarray;
+	unsigned int len;
+
+	len = nmemb * size;
+
+	if (nmemb == 0 || size == 0)
+		return (NULL);
+
+	memarray = malloc(len);
+
+	if (memarray == NULL)
+		return (NULL);
+
+	_memset(memarray, 0, len);
+
+	return (memarray);
+}
